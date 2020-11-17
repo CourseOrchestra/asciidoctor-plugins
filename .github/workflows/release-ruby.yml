@@ -1,5 +1,4 @@
----
-name: Release
+name: Release Ruby
 on:
   push:
     tags:
@@ -16,6 +15,7 @@ jobs:
         run: |
           bundle install
           bundle exec rake
+        working-directory: ./ruby
       - name: Configure credentials
         run: |
           mkdir -p $HOME/.gem
@@ -27,7 +27,9 @@ jobs:
       - name: Build gem
         run: |
           bundle exec rake build
+        working-directory: ./ruby
       - name: Publish to rubygems.org
         run: |
-          gem push pkg/neo4j-asciidoctor-extensions-${GITHUB_REF#refs/tags/v}.gem
+          gem push pkg/curs-asciidoctor-extensions-${GITHUB_REF#refs/tags/v}.gem
+        working-directory: ./ruby
 
