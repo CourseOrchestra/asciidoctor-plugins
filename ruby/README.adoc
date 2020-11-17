@@ -1,0 +1,56 @@
+= Curs Asciidoctor Extensions
+:caution-caption: :fire:
+
+image:https://github.com/Mogztter/curs-asciidoctor-extensions/workflows/CI/badge.svg[CI,link=https://github.com/Mogztter/curs-asciidoctor-extensions/actions?query=workflow%3ACI]
+image:https://badge.fury.io/rb/curs-asciidoctor-extensions.svg["Gem Version", link="https://rubygems.org/gems/curs-asciidoctor-extensions"]
+
+This repository contains Asciidoctor extensions made by Curs for processing and publishing AsciiDoc content.
+
+== Install
+
+[source,console]
+----
+$ gem install curs-asciidoctor-extensions
+----
+
+== Usage
+
+=== CLI
+
+[source,console]
+----
+$ asciidoctor -r curs-asciidoctor-extensions doc.adoc
+----
+
+=== API
+
+[source,ruby]
+----
+require 'curs/asciidoctor/extensions'
+----
+
+In addition, you can require individual extension:
+
+[source,ruby]
+----
+require 'curs/asciidoctor/extensions/..'
+----
+
+See below for the complete list of extensions.
+
+== Release
+
+The release process is automated and relies on GitHub Actions.
+
+The `RUBYGEMS_API_KEY` secret is configured on GitHub.
+See the `.github/workflows/release.yml` file for details.
+
+The release will be performed when a tag is pushed, the procedure is:
+
+. Change directory to _ruby_
+. Edit `curs-asciidoctor-extensions.gemspec` and update the version number `s.version`
+. Run `bundle exec rake` to make sure that everything is working
+. Commit both `curs-asciidoctor-extensions.gemspec` and `Gemfile.lock` files
+. Tag the version using `git tag vx.y.z` (don't forget the `v` prefix and replace `x.y.z` with an actual version)
+. Push your changes with the tag: `git push origin master --tags`
+

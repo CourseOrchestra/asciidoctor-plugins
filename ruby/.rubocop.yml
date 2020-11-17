@@ -1,0 +1,11 @@
+Style/Encoding:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 160
+
+Metrics/MethodLength:
+  Max: 25
+
+Metrics/AbcSize:
+  Max: 20
