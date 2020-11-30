@@ -5,7 +5,7 @@ require_relative '../lib/curs/asciidoctor/extensions/multirow_table_head'
 
 describe Curs::AsciidoctorExtensions::MultirowTableHeaderTreeProcessor do
   context 'convert to html5' do
-    it 'should apply mark formatting on inline phrases' do
+    it 'should produce a table header with two rows' do
       input = <<~'ADOC'
         [cols=3,hrows=2]
         |====

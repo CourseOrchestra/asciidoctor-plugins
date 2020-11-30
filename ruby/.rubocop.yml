@@ -9,3 +9,7 @@ Metrics/MethodLength:
 
 Metrics/AbcSize:
   Max: 20
+
+AllCops:
+  Exclude:
+    - 'lib/curs/asciidoctor/extensions/table_column_cell_role/**'
