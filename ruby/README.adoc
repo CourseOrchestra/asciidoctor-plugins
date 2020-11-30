@@ -1,7 +1,7 @@
 = Curs Asciidoctor Extensions
 :caution-caption: :fire:
 
-image:https://github.com/Mogztter/curs-asciidoctor-extensions/workflows/CI/badge.svg[CI,link=https://github.com/Mogztter/curs-asciidoctor-extensions/actions?query=workflow%3ACI]
+image:https://github.com/Mogztter/curs-asciidoctor-extensions/workflows/Build%20Ruby/badge.svg[CI,link=https://github.com/Mogztter/curs-asciidoctor-extensions/actions?query=workflow%3A%22Build+Ruby%22]
 image:https://badge.fury.io/rb/curs-asciidoctor-extensions.svg["Gem Version", link="https://rubygems.org/gems/curs-asciidoctor-extensions"]
 
 This repository contains Asciidoctor extensions made by Curs for processing and publishing AsciiDoc content.
