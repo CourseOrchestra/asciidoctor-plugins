@@ -1,28 +1,35 @@
-= Curs Asciidoctor Extensions
+= Course Orchestra Asciidoctor Extensions
 :caution-caption: :fire:
 
-image:https://github.com/Mogztter/curs-asciidoctor-extensions/workflows/Build%20Ruby/badge.svg[CI,link=https://github.com/Mogztter/curs-asciidoctor-extensions/actions?query=workflow%3A%22Build+Ruby%22]
+image:https://github.com/CourseOrchestra/asciidoctor-plugins/workflows/Build%20Ruby/badge.svg[CI,link=https://github.com/CourseOrchestra/asciidoctor-plugins/actions?query=workflow%3A%22Build+Ruby%22]
+image:https://github.com/CourseOrchestra/asciidoctor-plugins/workflows/Build%20JavaScript/badge.svg[CI,link=https://github.com/CourseOrchestra/asciidoctor-plugins/actions?query=workflow%3A%22Build+JavaScript%22]
 image:https://badge.fury.io/rb/curs-asciidoctor-extensions.svg["Gem Version", link="https://rubygems.org/gems/curs-asciidoctor-extensions"]
 
-This repository contains Asciidoctor extensions made by Curs for processing and publishing AsciiDoc content.
+This repository contains Asciidoctor extensions made by Course Orchestra for processing and publishing AsciiDoc content.
 
-== Install
+The extensions are available in both Ruby and JavaScript.
+
+NOTE: Ruby extensions can be used in the JVM through JRuby.
+
+== Ruby
+
+=== Install
 
 [source,console]
 ----
 $ gem install curs-asciidoctor-extensions
 ----
 
-== Usage
+=== Usage
 
-=== CLI
+==== CLI
 
 [source,console]
 ----
 $ asciidoctor -r curs-asciidoctor-extensions doc.adoc
 ----
 
-=== API
+==== API
 
 [source,ruby]
 ----
@@ -38,7 +45,7 @@ require 'curs/asciidoctor/extensions/..'
 
 See below for the complete list of extensions.
 
-== Release
+=== Release
 
 The release process is automated and relies on GitHub Actions.
 
