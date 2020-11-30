@@ -1,0 +1,27 @@
+{
+  "name": "curs-asciidoctor-extensions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/**.spec.js",
+    "lint": "standard lib/**.js spec/**js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mogztter/curs-asciidoctor-extensions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mogztter/curs-asciidoctor-extensions/issues"
+  },
+  "homepage": "https://github.com/Mogztter/curs-asciidoctor-extensions#readme",
+  "devDependencies": {
+    "@asciidoctor/core": "^2.2.1",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "standard": "^16.0.3"
+  }
+}
