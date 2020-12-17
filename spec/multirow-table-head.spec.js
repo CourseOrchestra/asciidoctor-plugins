@@ -6,7 +6,7 @@ const multirowTableHeadTreeProcessorExtension = require('../lib/multirow-table-h
 const asciidoctor = require('@asciidoctor/core')()
 
 describe('Multirow table head extension', () => {
-  it('should use post method when kroki-http-method value is post', () => {
+  it('should produce a table header with two rows', () => {
     const registry = asciidoctor.Extensions.create()
     multirowTableHeadTreeProcessorExtension.register(registry)
     const input = `

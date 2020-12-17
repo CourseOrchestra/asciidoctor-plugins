@@ -72,11 +72,11 @@ describe('Phrase inline macro extension', () => {
           return this.baseConverter.convert(node, transform)
         }
       }
-      asciidoctor.ConverterFactory.register(new CustomHtml5Converter(), ['html5'])
+      asciidoctor.ConverterFactory.register(new CustomHtml5Converter(), ['custom-html5'])
       const registry = asciidoctor.Extensions.create()
       phraseInlineMacroExtension.register(registry)
       const input = 'phrase:strong[text,data-fragment-index=1]'
-      const doc = asciidoctor.load(input, { doctype: 'inline', extension_registry: registry })
+      const doc = asciidoctor.load(input, { doctype: 'inline', extension_registry: registry, backend: 'custom-html5' })
       expect(doc.convert()).to.equal('<strong data-fragment-index="1">text</strong>')
     })
   })

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node tasks/build.js",
     "test": "mocha spec/**.spec.js",
     "lint": "standard lib/**.js spec/**js"
   },
@@ -22,6 +23,7 @@
     "@asciidoctor/core": "^2.2.1",
     "chai": "^4.2.0",
     "mocha": "^8.2.1",
+    "opal-compiler": "^1.0.13",
     "standard": "^16.0.3"
   }
 }
