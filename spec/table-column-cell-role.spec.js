@@ -35,8 +35,8 @@ describe('Table with column role specifications', () => {
     </tbody>
   </table>`
 
-  const output = asciidoctor.convert(input)
-  expect(output).to.equal(expected.split('\n').map((line) => line.trim()).join('\n').trim())
+    const output = asciidoctor.convert(input)
+    expect(output).to.equal(expected.split('\n').map((line) => line.trim()).join('\n').trim())
   })
 })
 

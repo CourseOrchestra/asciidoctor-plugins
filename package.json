@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node tasks/build.js",
     "test": "mocha spec/**.spec.js",
-    "lint": "standard lib/**.js spec/**js"
+    "lint": "standard lib spec"
   },
   "repository": {
     "type": "git",

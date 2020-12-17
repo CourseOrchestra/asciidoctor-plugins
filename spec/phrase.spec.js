@@ -61,6 +61,7 @@ describe('Phrase inline macro extension', () => {
         constructor () {
           this.baseConverter = asciidoctor.Html5Converter.$new()
         }
+
         convert (node, transform) {
           if (node.getNodeName() === 'inline_quoted') {
             const dataAttrs = Object.entries(node.getAttributes())
