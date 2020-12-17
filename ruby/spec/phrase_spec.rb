@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'asciidoctor'
-require_relative '../lib/curs/asciidoctor/extensions/inline_phrase_macro'
+require_relative '../lib/curs/asciidoctor/extensions/phrase_inline_macro'
 
 describe Curs::AsciidoctorExtensions::PhraseInlineMacro do
   context 'convert to html5' do
